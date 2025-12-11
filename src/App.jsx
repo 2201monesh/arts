@@ -1,13 +1,14 @@
 import { useState } from "react";
 import "./App.css";
+import AppDrawer from "./components/AppDrawer";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <p className="text-4xl">I'm Batman</p>
-    </>
+    <div className="h-screen w-screen flex items-center justify-center">
+      <AppDrawer />
+    </div>
   );
 }
 
