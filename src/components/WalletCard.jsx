@@ -68,7 +68,7 @@ function WalletCard() {
   };
 
   return (
-    <div className="border border-neutral-200 h-[55%] w-[28%] flex items-center justify-center flex-col">
+    <div className="h-[55%] w-[28%] flex items-center justify-center flex-col">
       <div className="flex flex-col justify-start items-start w-[90%] mb-2 ml-1">
         <p className="text-lg">Add all your cards &</p>
         <p className="text-lg flex items-center justify-between w-full">
@@ -79,8 +79,8 @@ function WalletCard() {
         </p>
       </div>
       <div className="w-[90%] h-[80%] rounded-4xl flex items-center justify-center bg-neutral-200 gray-box relative">
-        <div className="w-[55%] h-[65%] rounded-3xl flex items-center justify-center bg-white shadow-lg relative absolute top-2">
-          <div className="w-[94%] h-[55%] rounded-3xl flex items-center justify-center bg-white shadow-lg absolute top-20 border border-neutral-200 z-20">
+        <div className="w-[55%] h-[65%] rounded-3xl flex items-center justify-center bg-white shadow-sm relative absolute top-2">
+          <div className="w-[94%] h-[55%] rounded-3xl flex items-center justify-center bg-white shadow-sm absolute top-21 border border-neutral-200 z-20">
             <div className='w-[93%] h-[87%] border border-dashed border-neutral-400 rounded-2xl flex flex-col items-center justify-center bg-repeat bg-[url("https://www.transparenttextures.com/patterns/leather.png")] bg-neutral-100'>
               <span className="text-xs text-neutral-400 mb-1">
                 Wallet Balance
@@ -90,6 +90,7 @@ function WalletCard() {
                   <span className="value-one">$00.00</span>
                   <span className="value-two">$37,768.54</span>
                   <span className="value-three">$74,856.83</span>
+                  <span className="value-three">$94,659.52</span>
                 </div>
               </div>
             </div>
