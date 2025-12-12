@@ -98,7 +98,7 @@ function WalletCard() {
 
           <div
             ref={cardOne}
-            className="card-one absolute top-[-22px] w-[80%] h-[55%] rounded-xl px-4 py-2 bg-cyan-100 text-sm flex flex-col justify-between"
+            className="card-one absolute top-[-22px] w-[85%] h-[55%] rounded-xl px-4 py-2 bg-cyan-100 text-sm flex flex-col justify-between"
           >
             <div className="flex items-center justify-between">
               <span className="w-10">
@@ -113,7 +113,7 @@ function WalletCard() {
           </div>
           <div
             ref={cardTwo}
-            className="card-two absolute top-3 w-[80%] h-[55%] rounded-xl px-4 py-2 bg-amber-200 text-sm flex flex-col justify-between"
+            className="card-two absolute top-3 w-[85%] h-[55%] rounded-xl px-4 py-2 bg-amber-200 text-sm flex flex-col justify-between"
           >
             <div className="flex items-center justify-between">
               <span className="w-10">
@@ -128,7 +128,7 @@ function WalletCard() {
           </div>
           <div
             ref={cardThree}
-            className="card-three absolute top-12 w-[80%] h-[55%] rounded-xl px-4 py-2 bg-emerald-300 text-sm flex flex-col justify-between "
+            className="card-three absolute top-12 w-[85%] h-[55%] rounded-xl px-4 py-2 bg-emerald-300 text-sm flex flex-col justify-between "
           >
             <div className="flex items-center justify-between">
               <span className="w-10">
