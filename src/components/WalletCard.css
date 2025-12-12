@@ -40,17 +40,32 @@
 
 .card-one {
     animation: slideDown 0.8s linear;
-    background: linear-gradient(to bottom, #a5f3fc 0%, #67e8f9 100%);
+    /* background: linear-gradient(to bottom, #a5f3fc 0%, #67e8f9 100%); */
+    background: linear-gradient(to bottom,
+                #ffffff 0%,
+                #ffffff 0%,
+                #a5f3fc 3%,
+                #67e8f9 100%);
 }
 
 .card-two {
     animation: slideDown 0.8s linear;
-    background: linear-gradient(to bottom, #fde68a 0%, #fcd34d 100%);
+    /* background: linear-gradient(to bottom, #fde68a 0%, #fcd34d 100%); */
+    background: linear-gradient(to bottom,
+                #ffffff 0%,
+                #ffffff 0%,
+                #fde68a 3%,
+                #fcd34d 100%);
 }
 
 .card-three {
     animation: slideDown 0.8s linear;
-    background: linear-gradient(to bottom, #6ee7b7 0%, #34d399 100%);
+    /* background: linear-gradient(to bottom, #6ee7b7 0%, #34d399 100%); */
+    background: linear-gradient(to bottom,
+                #ffffff 0%,
+                #ffffff 0%,
+                #6ee7b7 3%,
+                #34d399 100%);
 }
 
 /* diagonal soft gloss */
