@@ -1,0 +1,144 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.gray-box{
+    overflow: hidden;
+}
+
+.card-start {
+    transform: translateY(-150px);
+    opacity: 0;
+    /* initially invisible */
+    pointer-events: none;
+}
+
+.slider-container {
+    height: 36px;
+    /* same as h-14 */
+    width: 144px;
+    /* same as w-36 */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 1.5s linear forwards;
+}
+
+.slider-wrapper span {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #737373;
+}
+
+.card-one {
+    animation: slideDown 0.8s linear;
+    background: linear-gradient(135deg, #a5f3fc 0%, #67e8f9 100%);
+}
+
+.card-two {
+    animation: slideDown 0.8s linear;
+    background: linear-gradient(135deg, #fde68a 0%, #fcd34d 100%);
+}
+
+.card-three {
+    animation: slideDown 0.8s linear;
+    background: linear-gradient(135deg, #6ee7b7 0%, #34d399 100%);
+}
+
+/* diagonal soft gloss */
+.card-one::before {
+    content: "";
+position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-radius: inherit;
+
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.35) 0%,
+            rgba(255, 255, 255, 0.15) 40%,
+            rgba(255, 255, 255, 0) 60%);
+
+    mix-blend-mode: screen;
+}
+
+/* diagonal soft gloss (same as card-three) */
+.card-two::before {
+content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-radius: inherit;
+
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.35) 0%,
+            rgba(255, 255, 255, 0.15) 40%,
+            rgba(255, 255, 255, 0) 60%);
+
+    mix-blend-mode: screen;
+}
+
+.card-three::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-radius: inherit;
+
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.35) 0%,
+            rgba(255, 255, 255, 0.15) 40%,
+            rgba(255, 255, 255, 0.0) 60%);
+
+    mix-blend-mode: screen;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-150px);
+    }
+
+    50% {
+        transform: translateY(-70px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(56px);
+    }
+
+    33% {
+        transform: translateY(0px);
+    }
+
+    66% {
+        transform: translateY(-56px);
+    }
+
+    100% {
+        transform: translateY(-56px);
+    }
+}
