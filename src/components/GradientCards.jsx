@@ -1,10 +1,8 @@
 import React from "react";
 
-function GradientCards() {
+function GradientCards({ gradient }) {
   return (
-    <div>
-      <p>cards</p>
-    </div>
+    <div className={`w-52 h-24 rounded-xl bg-gradient-to-b ${gradient}`}></div>
   );
 }
 
