@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import "./WalletCard.css";
 import { MdArrowOutward } from "react-icons/md";
 import { motion, AnimatePresence } from "motion/react";
+import visaLogo from "../assets/visa-logo-png-removebg-preview.png";
+import masterCardLogo from "../assets/mastercard-logo-removebg-preview.png";
 
 const amounts = ["$00.00", "$29,720.49", "$79,890.54"];
 
@@ -81,7 +83,7 @@ function WalletCard() {
       <div className="w-[90%] h-[80%] rounded-4xl flex items-center justify-center bg-neutral-200 gray-box relative">
         <div className="w-[55%] h-[65%] rounded-3xl flex items-center justify-center bg-white shadow-sm relative absolute top-2">
           <div className="w-[94%] h-[55%] rounded-3xl flex items-center justify-center bg-white shadow-sm absolute top-21 border border-neutral-200 z-20">
-            <div className='w-[93%] h-[87%] border border-dashed border-neutral-400 rounded-2xl flex flex-col items-center justify-center bg-repeat bg-[url("https://www.transparenttextures.com/patterns/leather.png")] bg-neutral-100'>
+            <div className="w-[93%] h-[87%] border border-dashed border-neutral-400 rounded-2xl flex flex-col items-center justify-center bg-gradient-to-b from-neutral-50 to-neutral-200">
               <span className="text-xs text-neutral-400 mb-1">
                 Wallet Balance
               </span>
@@ -98,46 +100,37 @@ function WalletCard() {
 
           <div
             ref={cardOne}
-            className="card-one absolute top-[-22px] w-[85%] h-[55%] rounded-xl px-4 py-2 bg-cyan-100 text-sm flex flex-col justify-between"
+            className="card-one border border-cyan-300 absolute top-[-22px] w-[85%] h-[55%] rounded-xl px-4 py-2 bg-cyan-100 text-sm flex flex-col justify-between"
           >
             <div className="flex items-center justify-between">
               <span className="w-10">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUlzR4Op-z3V9YNzDrTL9MeCKME1B4qq74Ig&s"
-                  alt="logo"
-                />
+                <img src={visaLogo} alt="logo" />
               </span>
-              <span className="text-neutral-700 text-xs">amount</span>
+              <span className="text-neutral-700 text-xs">$19,802.69</span>
             </div>
             <div className="text-neutral-700 text-xs">1234 5678 9810</div>
           </div>
           <div
             ref={cardTwo}
-            className="card-two absolute top-3 w-[85%] h-[55%] rounded-xl px-4 py-2 bg-amber-200 text-sm flex flex-col justify-between"
+            className="card-two border border-amber-300 absolute top-3 w-[85%] h-[55%] rounded-xl px-4 py-2 bg-amber-200 text-sm flex flex-col justify-between"
           >
             <div className="flex items-center justify-between">
               <span className="w-10">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXnXkBmw2uSAI7UPnfI8ZWleOP_9jguz46rQ&s"
-                  alt="logo"
-                />
+                <img src={masterCardLogo} alt="logo" />
               </span>
-              <span className="text-neutral-700 text-xs pb-2">amount</span>
+              <span className="text-neutral-700 text-xs pb-2">$37,088.29</span>
             </div>
             <div className="text-neutral-700 text-xs">1234 5678 9810</div>
           </div>
           <div
             ref={cardThree}
-            className="card-three absolute top-12 w-[85%] h-[55%] rounded-xl px-4 py-2 bg-emerald-300 text-sm flex flex-col justify-between "
+            className="card-three border border-emerald-400 absolute top-12 w-[85%] h-[55%] rounded-xl px-4 py-2 bg-emerald-300 text-sm flex flex-col justify-between"
           >
             <div className="flex items-center justify-between">
               <span className="w-10">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUlzR4Op-z3V9YNzDrTL9MeCKME1B4qq74Ig&s"
-                  alt="logo"
-                />
+                <img src={visaLogo} alt="logo" />
               </span>
-              <span className="text-neutral-700 text-xs">amount</span>
+              <span className="text-neutral-700 text-xs">$37,768.54</span>
             </div>
             <div className="text-neutral-700 text-xs">1234 5678 9810</div>
           </div>
